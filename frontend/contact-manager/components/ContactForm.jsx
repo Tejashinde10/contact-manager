@@ -16,10 +16,14 @@ function ContactForm({ onAdd }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await API.post("/contacts", form);
-
-    setForm({ name: "", email: "", phone: "", notes: "" });
-    onAdd();
+    try {
+      await API.post("/contacts", form);
+      setForm({ name: "", email: "", phone: "", notes: "" });
+      onAdd();
+    } catch (error) {
+      console.error("Failed to add contact", error);
+      alert("Failed to add contact");
+    }
   };
 
   return (
