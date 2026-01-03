@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.contact-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-form input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background: #1e1e1e;
+  color: #fff;
+}
+
+.contact-form button {
+  padding: 8px 16px;
+  background: #4caf50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* CONTACT CARD */
+.contact-card {
+  border: 1px solid #333;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  background: #1a1a1a;
+}
+
+.contact-card p {
+  margin: 4px 0;
+}
+
+.actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actions .update {
+  background: #2196f3;
+  color: white;
+}
+
+.actions .delete {
+  background: #f44336;
+  color: white;
+}
